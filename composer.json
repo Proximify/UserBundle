@@ -1,19 +1,28 @@
 {
-    "name": "proximify/[BUNDLE_NAME]",
+    "name": "proximify/user-bundle",
     "type": "symfony-bundle",
-    "description": "[DESCRIPTION]",
-    "authors": [
-       
+    "description": "Symfony User Bundle",
+    "license": "MIT",
+    "keywords": [
+        "User management"
     ],
+    "authors": [
+        {
+            "name": "Mert Metin",
+            "email": "mert@proximify.ca"
+        }
+    ],
+    "minimum-stability": "dev",
     "require": {
-        
+        "php": ">=7.2.5",
+        "symfony/http-kernel": "^5.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5@dev"
     },
     "autoload": {
         "psr-4": {
-            "Proximify\\BUNDLE_NAME\\": ""
+            "Proximify\\UserBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
@@ -21,7 +30,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Proximify\\BUNDLE_NAME\\Tests\\": "/Tests/"
+            "Proximify\\UserBundle\\Tests\\": "/Tests/"
         }
     }
 }
