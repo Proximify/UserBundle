@@ -2,6 +2,8 @@
 
 namespace Proximify\UserBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
 abstract class User
 {   
     /**
